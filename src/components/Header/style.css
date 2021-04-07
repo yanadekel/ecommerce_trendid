@@ -1,0 +1,48 @@
+
+.MuiAppBar-colorPrimary.custom-navbar {
+  background-color: white;
+  opacity: 0.5;
+
+}
+
+
+.rightSideHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.basket-wrapper {
+  flex-grow: 1;
+  justify-content: flex-start;
+  display: flex;
+  /* width:none; */
+}
+
+.basket-wrapper strong {
+  color: white;
+}
+
+.basket-wrapper .custom-basket {
+  font-size: 45px;
+  color: black;
+  z-index: 10;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-logo {
+  font-size: 40px;
+  color: black;
+  z-index: 10;
+}
+
+.custom-navbar .custom-title {
+  display: flex;
+  text-decoration: none;
+}
+

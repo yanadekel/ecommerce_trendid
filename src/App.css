@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.AppHeader {
+  height:8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AppBody {
+height: 12vh;
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+

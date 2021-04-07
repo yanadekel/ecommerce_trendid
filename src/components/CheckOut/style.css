@@ -1,0 +1,29 @@
+.checkout {
+  height: 100vh;
+  width:100%;
+  padding-bottom: 15px;
+  background: url("../img/womenStore/CutOutBOdySuit.jpg") no-repeat center center fixed;
+}
+
+.checkout .paper {
+  max-width: 600px;
+  padding:20px 15px;
+  margin: 0 auto;
+  background-color: hotpink;
+
+}
+
+
+.checkout .paper h6 {
+  margin: 20px 0;
+}
+
+.checkout .paper .actions.payment-actions {
+  margin-top: 25px;
+}
+
+
+.checkout .paper .actions a {
+  margin-left: 0;
+  margin-right: 15px;
+}

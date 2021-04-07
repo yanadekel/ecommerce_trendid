@@ -1,0 +1,36 @@
+.basket-bunner{
+  padding-top:150px;
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../img/womenStore/tyeDyeLongSouit.jpg") no-repeat center center fixed;
+  /* background-size: cover; */
+  
+}
+
+.basket-banner>div>div {
+align-items: center;
+}
+
+.basket-banner .brand {
+  display: flex;
+  align-items: center;
+}
+
+.basket-banner .brand  svg {
+  width:100%;
+  font-size: 220px;
+}
+
+.basket-banner .title {
+  font-size: 45px;
+  margin-bottom: 28px;
+  
+}
+
+.a.shopping-button {
+  color:black;
+  background-color: black;
+  
+}
