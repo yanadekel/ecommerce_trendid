@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Card, CardMedia, CardContent, CardActions, CardActionArea,Typography } from "@material-ui/core";
 
 
@@ -7,12 +7,10 @@ import { Card, CardMedia, CardContent, CardActions, CardActionArea,Typography } 
 
 
 const Trend = ({filterTrends, name, about, img, id }) => {
-  const [filterKey, setfilterKey]= useState("All");
+ 
 
-  const findCategery=  (e) =>{
+  const findCategery=  () =>{
    
-   setfilterKey(id);
-    
     filterTrends(id);
    
   }
@@ -42,9 +40,6 @@ const Trend = ({filterTrends, name, about, img, id }) => {
           />
         </CardActionArea>
         <CardActions className="actions-content">
-          {/* <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton> */}
         </CardActions>
       </Card>
     </div>

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 
 
-const Categories = ({filterTrends, trends, products, categories, addProduct }) => {
-  console.log( trends )
+const Categories = ({filterTrends, trends}) => {
+
   return (
     <div className="categorisComponent">
       <Container id="trends">

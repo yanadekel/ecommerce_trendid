@@ -48,7 +48,7 @@ const App = () => {
     fetchCategories();
     fethBasketData();
     fethTrendsData();
-  }, []);
+  }, [category]);
 
 
 
@@ -93,7 +93,7 @@ const App = () => {
             <Trends trends= {trends} products={products} addProduct={addProduct} categories={categories} />
           </Route>
           <Route path="/Products" >
-            <Products products={products} addProduct={addProduct} categories={categories}  filterCat={category}/>
+            <Products products={products} addProduct={addProduct} categories={categories}  filterCat={filterTrends}/>
           </Route>
           <Route path="/basket">
             <Basket
