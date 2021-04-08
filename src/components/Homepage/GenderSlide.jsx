@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -7,7 +8,7 @@ function GenderSlide({url, id}) {
   
   return (
       <div>
-      <img hightsrc={url} alt={id} />
+      <Link to="/products"><img className= "caruselHomeImg" src={url} alt={id} /></Link>
       </div>
    
   );

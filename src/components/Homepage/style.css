@@ -1,14 +1,14 @@
 .homeImgCarusel {
   position: relative;
   padding: 24px;
-  height: 92vh;
+  height: 91vh;
   width:100%;
   align-items: center;
 
 
 }
 
-img {
+.caruselHomeImg {
 height: 817px;
 width:507px;
 margin: 0 auto;

@@ -16,7 +16,7 @@ const Categories = ({filterTrends, trends}) => {
           {trends.map((trend) => {
             
             return (<Grid key={trend.name} item xs={12} sm={6} md={4}>
-              <Link to="/products"> <Trend  id={trend.id} name={trend.name} img={trend.url} about={trend.about} filterTrends={filterTrends}/></Link>
+              <Link style={{textDecoration:"none"}} to="/products"> <Trend  id={trend.id} name={trend.name} img={trend.url} about={trend.about} filterTrends={filterTrends}/></Link>
               
             </Grid>
               )

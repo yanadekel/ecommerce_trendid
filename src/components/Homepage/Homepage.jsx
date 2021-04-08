@@ -13,15 +13,15 @@ export default function HomePage() {
   // const [leftBtnState, setLeftBtnState]=useState("Men");
   // const [rihgtBtnState, setRightBtnState]=useState("Kids");
 
-  const  settings = {
+  const settings = {
     dots: true,
-    fade:true,
+    fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:true,
-    className:"slides"
+    arrows: true,
+    className: "slides"
 
   };
 
@@ -42,32 +42,19 @@ export default function HomePage() {
   }, []);
 
 
-  // const changeToKids = () => {
-  //   setGenderState("kids");
-  //   setLeftBtnState("Women");
-  //   setRightBtnState("");
-  // }
-
-  // const changeToMen = () => {
-  //   setGenderState("men");
-  //   setRightBtnState("Women");
-  //   setLeftBtnState("");
-    
-  // }
 
   return (
     <div className="homeImgCarusel">
-      {/* <button style={{ left: "0", position: "absolute", zIndex: "10", top: "50%" }} onClick={changeToMen}><i className="fas fa-chevron-left"></i><span className="right btn">{leftBtnState}</span></button> */}
+
       <Slider {...settings}>
-      {GenderData.map((gender) => {
-          return(
-          
-          <GenderSlide id={gender.id} url={gender.url} key={gender.id}/>
+        {GenderData.map((gender) => {
+          return (
+
+            <GenderSlide id={gender.id} url={gender.url} key={gender.id} />
           )
         }
         )
-      }
-      {/* <button style={{ right: "0", position: "absolute", zIndex: "10", top: "50%" }} onClick={changeToKids}><span className="right btn">{rihgtBtnState}</span><i className="fas fa-chevron-right"></i></button> */}
+        }
       </Slider>
     </div>
   )
