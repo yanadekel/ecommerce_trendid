@@ -39,3 +39,10 @@ align-items: center;
   margin:0;
   color:black;
 }
+
+.actions{
+  width:fit-content;
+  margin-top: 10px;
+  
+}
+

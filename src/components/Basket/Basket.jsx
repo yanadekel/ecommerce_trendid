@@ -2,16 +2,16 @@ import { Grid, Card, CardMedia, CardContent, CardActions, Typography, Container,
   from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Bunner from "./Bunner";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Spinner from "../Spinner/Spinner";
 
 import "./style.css";
 
 const Basket = ({ basketData, updateProduct, handleEmptyBasket, RemoveItemFromBasket }) => {
-  const [showSpinner, setShowSpinner] = useState (true);
+  const [showSpinner, setShowSpinner] = useState(true);
 
   const loading = () => {
-    setTimeout (()=>{
+    setTimeout(() => {
       setShowSpinner(false);
     }, 3000);
     if (showSpinner) {
@@ -20,7 +20,7 @@ const Basket = ({ basketData, updateProduct, handleEmptyBasket, RemoveItemFromBa
     return <Bunner />;
   };
 
-  if (!basketData.line_items || !basketData.line_items.length) return  loading();
+  if (!basketData.line_items || !basketData.line_items.length) return loading();
 
   return (
     <Container id="basket">
@@ -96,22 +96,36 @@ const Basket = ({ basketData, updateProduct, handleEmptyBasket, RemoveItemFromBa
       </Grid>
       <div className="actions">
         <Button
-        size="small"
-        color="secondary"
-        variant = "contained"
-        onClick= {handleEmptyBasket}
+          className="basketBtn"
+          size="small"
+          variant="contained"
+          component={Link} to="/products">
+          Continue Shop
+        </Button>
+
+        <Button
+          className="basketBtn"
+          size="small"
+          color="secondary"
+          variant="contained"
+          margin-left=" 2px"
+          onClick={handleEmptyBasket}
         >
           Empty Basket
         </Button>
 
         <Button
-        size="small"
-        variant = "contained"
-        component ={Link} to ="/checkout"
-        
+          className="basketBtn"
+          size="small"
+          variant="contained"
+          component={Link} to="/checkout"
+          
+
         >
-         Checkout
+          Checkout
         </Button>
+
+
       </div>
     </Container>
   );
