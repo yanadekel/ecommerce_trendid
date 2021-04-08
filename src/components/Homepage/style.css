@@ -1,14 +1,53 @@
 .homeImgCarusel {
   position: relative;
-  height: 80vh;
-  width:100vw;
-   
+  padding: 24px;
+  height: 92vh;
+  width:100%;
+  align-items: center;
+
 
 }
 
-.slideContainer {
+img {
+height: 817px;
+width:507px;
+margin: 0 auto;
+
+}
+
+.slides .slick-prev,
+.slides .slick-next {
   position: absolute;
-  height:100%;
-  width:100%;
+  top: 50%;
+  z-index: 1;
+  color:black;
   
-  }
+}
+
+
+.slides {
+  position: relative;
+  color: black;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+  
+}
+
+.slides .slick-prev {
+  left: 5%;
+  background-color: black;
+  border-radius: 50%;
+ 
+}
+
+.slides .slick-next {
+  right: 5%;
+  background-color: black;
+  border-radius: 50%;
+  
+}

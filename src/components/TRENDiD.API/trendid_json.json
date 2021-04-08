@@ -2,15 +2,15 @@
   "gender": [
     {
       "id": "women",
-      "url": "https://static.zara.net/photos///2021/V/0/1/p/5644/071/021/3/w/375/5644071021_1_1_1.jpg?ts=1615285524033"
+      "url": "https://static.zara.net/photos///contents/mkt/spots/ss21-north-new-in-woman/subhome-xmedia-13//w/1280/IMAGE-large-portrait-baee558e-08ab-4582-bb63-d3ffa31c59e3-default_0.jpg?ts=1617203206015"
     },
     {
       "id": "men",
-      "url": "https://static.zara.net/photos///2021/V/0/2/p/0840/498/064/2/w/400/0840498064_1_1_1.jpg?ts=1616078745445"
+      "url": "https://static.zara.net/photos///contents/mkt/spots/ss21-north-new-in-man/subhome-xmedia-14//w/1280/IMAGE-large-portrait-ceb8f9eb-01c8-4bfc-b52a-b6878f432d07-default_0.jpg?ts=1617694369694"
     },
     {
       "id": "kids",
-      "url": "https://static.zara.net/photos///2021/V/0/3/p/5048/660/600/309/w/400/5048660600_15_1_1.jpg?ts=1617213040286"
+      "url": "https://static.zara.net/photos///contents/mkt/spots/ss21-north-new-in-kids/subhome-xmedia-14//w/1280/IMAGE-large-portrait-2527c3b9-9975-4d68-acd5-8232ed4856c8-default_0.jpg?ts=1617620310835"
     }
   ],
   "labels": [
@@ -20,16 +20,17 @@
   ],
   "trends": [
     {
+      "id":"Tie-Dye-women",
       "name": "tye dye",
       "url": "https://static.zara.net/photos///2021/V/0/1/p/2513/426/330/2/w/1280/2513426330_1_1_1.jpg?ts=1611922590447",
       "about": "Tye dye lends itself perfectly to the notion that we all want to 'blend in and yet stand out simultaneously. It’s a fundamental aspect of being human' We can be in the same community, while still maintaining our own sense of self."
     },
-    {
+    {"id":"Wide-Leg-women",
       "name": "wide Strides",
       "url": "https://static.zara.net/photos///2021/V/0/1/p/8246/084/250/2/w/460/8246084250_1_1_1.jpg?ts=1616748906701",
       "about": "Baggy trousers may not have the streamlining effect of your favoured slim-line silhouettes. But, they’re a bona fide trend for spring, and they’re showing their elegant side this season, taking over as your everyday trouser shape of choice. Quick march!"
     },
-    {
+    {"id":"Cut-Out-women",
       "name": "cutouts",
       "url": "https://static.zara.net/photos///2021/V/0/1/p/4437/090/513/2/w/1306/4437090513_1_1_1.jpg?ts=1617116848328",
       "about": "Cut-outs worked their way into gowns, sheath dresses and slippery silks, spicing up conservative looks thanks to peekaboo glimpses of skin. If you’re wary of whole-heartedly throwing in your lot with this trend, we suggest you start here."

@@ -48,10 +48,10 @@ const App = () => {
     fetchCategories();
     fethBasketData();
     fethTrendsData();
-  }, [category]);
+  }, []);
 
 
-
+console.log (products)
   const addProduct = async (productId, quantity) => {
     const response = await commerce.cart.add(productId, quantity);
     setBasketData(response.cart);
@@ -90,10 +90,10 @@ const App = () => {
         <Switch>
           <Route path="/" component={Homepage} exact />
           <Route path="/trends" >
-            <Trends trends= {trends} products={products} addProduct={addProduct} categories={categories} />
+            <Trends trends= {trends} products={products} addProduct={addProduct} categories={categories} filterTrends={filterTrends}/>
           </Route>
           <Route path="/Products" >
-            <Products products={products} addProduct={addProduct} categories={categories}  filterCat={filterTrends}/>
+            <Products products={products} addProduct={addProduct} categories={categories}  filterCat={category}/>
           </Route>
           <Route path="/basket">
             <Basket
