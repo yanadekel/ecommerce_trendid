@@ -28,7 +28,7 @@ export default function Header({ basketItems, totalCost }) {
             {location.pathname === "/basket" ?
               (<div className="basket-wrapper">
                 <h2>
-                  Total cost: <strong>{totalCost}</strong>
+                  Total cost: <strong style={{color:"black"}}>{totalCost}</strong>
                 </h2>
               </div>
               ) : (
