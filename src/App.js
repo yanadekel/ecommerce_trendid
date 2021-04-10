@@ -51,7 +51,7 @@ const App = () => {
   }, []);
 
 
-console.log (products)
+  console.log(products)
   const addProduct = async (productId, quantity) => {
     const response = await commerce.cart.add(productId, quantity);
     setBasketData(response.cart);
@@ -76,24 +76,26 @@ console.log (products)
     setBasketData(response.cart);
   }
 
-  const filterTrends = (category)=>{
+  const filterTrends = (category) => {
     setCategory(category);
   }
 
   return (<>
     <BrowserRouter>
       <div className="AppHeader">
-        <Header basketItems={basketData.total_items} 
-        totalCost={(basketData.subtotal && basketData.subtotal.formatted_with_symbol) || "00.00"} />
+        <Header basketItems={basketData.total_items}
+          totalCost={(basketData.subtotal && basketData.subtotal.formatted_with_symbol) || "00.00"} />
       </div>
       <div className="AppBody">
         <Switch>
-          <Route path="/" component={Homepage} exact />
+          <Route exact path="/" >
+            <Homepage filterTrends={filterTrends} />
+          </Route>
           <Route path="/trends" >
-            <Trends trends= {trends} products={products} addProduct={addProduct} categories={categories} filterTrends={filterTrends}/>
+            <Trends trends={trends} products={products} addProduct={addProduct} categories={categories} filterTrends={filterTrends} />
           </Route>
           <Route path="/Products" >
-            <Products products={products} addProduct={addProduct} categories={categories}  filterCat={category}/>
+            <Products products={products} addProduct={addProduct} categories={categories} filterCat={category} />
           </Route>
           <Route path="/basket">
             <Basket

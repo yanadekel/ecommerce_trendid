@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 
-export default function HomePage() {
+export default function HomePage({filterTrends}) {
   const [GenderData, setGenderData] = useState([]);
  
 
@@ -74,7 +74,7 @@ export default function HomePage() {
         {GenderData.map((gender) => {
           return (
 
-            <GenderSlide id={gender.id} url={gender.url} key={gender.id} />
+            <GenderSlide id={gender.id} url={gender.url} key={gender.id} filterTrends={filterTrends}/>
           )
         }
         )
