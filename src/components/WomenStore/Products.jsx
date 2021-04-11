@@ -1,7 +1,7 @@
 import { Grid, Container } from "@material-ui/core"
 import Product from "./Product";
 import "./style.css";
-import React, {useState, useEffect} from "react";
+
 
 
 export default function Products({ products, categories, addProduct, filterCat }) {
