@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import trendid_json from "../TRENDiD.API/trendid_json.json"
 import GenderSlide from './GenderSlide';
 import "./style.css";
 import "slick-carousel/slick/slick.css";
@@ -50,19 +50,16 @@ export default function HomePage({filterTrends}) {
   };
 
   useEffect(() => {
-    const source = axios.CancelToken.source();
-    const search = async () => {
-      const data = await axios.get('https://trend-d-49ba4-default-rtdb.firebaseio.com/gender.json', { cancelToken: source.token });
-      const dataArr = data.data
-      console.log(dataArr);
-      setGenderData(dataArr);
+    const search = () => {
+      // const data = await axios.get('https://trend-d-49ba4-default-rtdb.firebaseio.com/gender.json');
+      const data =trendid_json.gender;
+      console.log(data);
+      setGenderData(data);
     }
 
     search();
 
-    return () => {
-      source.cancel()
-    }
+    
   }, []);
 
 

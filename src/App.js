@@ -9,7 +9,7 @@ import { commerce } from './components/TRENDiD.API/commerce';
 import Basket from './components/Basket/Basket';
 import CheckOut from './components/CheckOut/CheckOut';
 import Trends from "./components/Trends/Trends";
-import axios from 'axios';
+import trendid_json from "./components/TRENDiD.API/trendid_json.json"
 
 
 
@@ -37,9 +37,12 @@ const App = () => {
   };
 
 
-  const fethTrendsData = async () => {
-    const response = await axios.get("https://trend-d-49ba4-default-rtdb.firebaseio.com/trends.json");
-    setTrends((response && response.data) || []);
+  const fethTrendsData =  () => {
+    // const response = await axios.get("https://trend-d-49ba4-default-rtdb.firebaseio.com/trends.json");
+    // setTrends((response && response.data) || []);
+    const data= trendid_json.trends;
+    setTrends(data);
+    
   };
 
 
